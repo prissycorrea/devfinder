@@ -1,0 +1,51 @@
+header spam {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__container {
+    margin-top: 3em;
+    position: relative;
+}
+
+input {
+    background-color: var(--box-background);
+    border-radius: 20px;
+    border: none;
+    color: var(--light-font);
+    font-family: var(--text-font-family);
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+
+.search__button {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 12px;
+    color: var(--light-font);
+    font-family: var(--text-font-family);
+    left: 78em;
+    outline: none;
+    padding: 10px;
+    position: absolute;
+    width: 8em;
+    top: 10%;
+}
+
+.search__button:hover {
+    background-color: var(--button-hover-color);
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: var(--light-font);
+    font-family: var(--text-font-family);
+    background: url('../img/lupa.png') no-repeat 1em;
+    background-size: contain;
+    padding-left: 3em;
+}
+
+.color-mode {
+    text-transform: uppercase;
+}

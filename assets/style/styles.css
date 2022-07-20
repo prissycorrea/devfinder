@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url('./header.css');
+@import url('./main.css');
+
+/*variables*/
+:root {
+    --background: #141c2f;
+    --box-background: #1f2a48;
+    --light-font: #f8fbff;
+    --icon-color: #0075fa;
+    --user-color: #0075fa;
+    --button-color: #0075fa;
+    --button-hover-color: #0764cd;
+    --title-font-family: 'Secular One', sans-serif;
+    --text-font-family: 'Inconsolata', monospace;
+}
+
+/*reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*general body config*/
+body {
+    align-items: center;
+    background-color: var(--background);
+    color: var(--light-font);
+    display: flex;
+    font-family: var(--text-font-family);
+    font-size: 1.1em;
+    height: calc(100vh - 20em);
+    justify-content: center;
+}
+
+/*general container*/
+.container {
+    height: 60%;
+    margin: 0 auto;
+    width: 60%;
+}
+
+/*placeholder config*/
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+ input:focus:-moz-placeholder { /* Firefox 18- */
+    color: transparent;  
+}
+
+ input:focus::-moz-placeholder {  /* Firefox 19+ */
+    color: transparent;  
+}
+
+input:focus:-ms-input-placeholder {  
+    color: transparent;  
+}
+
+:: placeholder {
+    margin-left: 2em;
+}
