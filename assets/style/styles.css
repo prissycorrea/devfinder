@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 @import url('./header.css');
 @import url('./main.css');
+@import url('./lightmode.css');
 
 /*variables*/
 :root {
@@ -61,4 +62,30 @@ input:focus:-ms-input-placeholder {
 
 :: placeholder {
     margin-left: 2em;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container {
+        height: 90%;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media screen and  (min-width: 768px) and (max-width: 1023px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container {
+        height: 90%;
+        margin: 0 auto;
+        width: 90%;
+    }
 }

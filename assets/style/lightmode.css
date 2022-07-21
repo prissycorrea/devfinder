@@ -1,0 +1,16 @@
+.light__mode--container {
+    color: #465666;
+    background-color: #A1C6EA;
+}
+
+.light__mode--box {
+    background-color: #E4E5E6;
+}
+
+.light__mode--text {
+    color: #465666;
+}
+
+.light__mode--input::placeholder {
+    color: #465666;
+}

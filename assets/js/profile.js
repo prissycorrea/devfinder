@@ -1,5 +1,3 @@
-
-
 const profileImage = document.querySelector('.profile__image')
 const userName = document.querySelector('.profile__title')
 const joined = document.querySelector('.profile__joined')
@@ -16,6 +14,16 @@ const userTwitter = document.querySelector('.social__twitter')
 const userWork = document.querySelector('.social__work')
 
 const searchButton = document.querySelector('.search__button')
+const searchBar = document.querySelector('.search__input')
+
+
+//chama a função callUser ao dar 'enter' no input
+searchBar.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+        callUser()
+        limpar()
+    }
+});
 
 const callUser = () => {
     let search = document.querySelector('.search__input').value
@@ -70,6 +78,6 @@ const callUser = () => {
     });
 }
 
-
-
-//export default callUser
+function limpar() {
+    document.querySelector('.search__input').value = ''
+}
